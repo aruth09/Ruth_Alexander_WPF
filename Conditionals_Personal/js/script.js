@@ -14,7 +14,11 @@ if(carmileage <= conditionalmileage)
 if(caryear >= conditionalyear)
 	{buycar = true;}
 		else{buycar = false;}
+if (carmileage <= bonusmileage) 
+	{buycar = true;}
+if (caryear >= bonusyear) 
+	{buycar = true;}		
 if(buycar)
-	{consel.log ("Go ahead and buy the car. Its gonna be a great car.");}
+	{alert("Go ahead and buy the car. Its gonna be a great car.");}
 		else
-			{console.log ("Don't buys the car, its either old or had to many miles. Keep looking.");}
+			{alert("Don't buy the car, its either old or had to many miles. Keep looking.");}
