@@ -9,8 +9,8 @@ var getreadytime = 2;
 var sleep = worktime - sleepneeded - getreadytime;
 (worktime < 6) ?  alert("Stay in and get some sleep.");
 	else if (moneynacount < 200) 
-		{alert("You have no money, stay home.")};
+		{alert("You have no money, stay home.");}
 			else if (homework) 
-				{alert("You need to stay home and work on homework.")};
+				{alert("You need to stay home and work on homework.");}
 				else 
-					{alert("Go to the bar and have some fun. Be in bed by " + sleep + "am to get some sleep to be functional at work.")};
+					{alert("Go to the bar and have some fun. Be in bed by " + sleep + "am to get some sleep to be functional at work.");}
