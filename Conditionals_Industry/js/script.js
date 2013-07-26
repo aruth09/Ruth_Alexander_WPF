@@ -12,5 +12,5 @@ if (proposedhourscommitted <= maxhourscommitted && desiredhourlypay <= proposedj
 	{takejob = true;}
 	else{takejob=false;}
 if (takejob) 
-	{alert("Take the job! The money is good and you currently have time.")};
-	else{alert("Do not take the job, you are booked and can not work for free.")}
+	{alert("Take the job! The money is good and you currently have time.");}
+	else{alert("Do not take the job, you are booked and can not work for free.");}
