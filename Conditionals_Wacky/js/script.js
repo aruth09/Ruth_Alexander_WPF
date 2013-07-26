@@ -3,11 +3,11 @@
 
 var worktime = prompt("What time do you work at?");
 var moneynacount = prompt("How much money do you have?");
-var homework = prompt("Do you have homework?(true/false)");
+var homework = confirm("homework?");
 var sleepneeded = 6;
 var getreadytime = 2;
 var sleep = worktime - sleepneeded - getreadytime;
-if (worktime < 6)  
+if (worktime <= 7)  
 	{alert("Stay in and get some sleep.");}
 		else if (moneynacount < 200) 
 			{alert("You have no money, stay home.");}
