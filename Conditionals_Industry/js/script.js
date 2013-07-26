@@ -1,7 +1,7 @@
 // JavaScript 
 // Alexander Ruth Conditional Industry
 
-var currentjobhours = prompt("How many hours are committed to current projects?");
+var currentjobhours = prompt("How many hours are committed to current projects?");//prompt user
 var proposedjobhours = prompt("How many hours will the Job take?");
 var proposedjobhourlypay = prompt("How much will the Job pay per hour?");
 var desiredhourlypay = 20;
