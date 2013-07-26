@@ -11,10 +11,10 @@ var buycar = false;
 if(carmileage <= conditionalmileage)
 	{buycar = true;}
 		else{buycar = false;}
-if(caryear => conditionalyear)
+if(caryear >= conditionalyear)
 	{buycar = true;}
 		else{buycar = false;}
 if(buycar)
 	{consel.log ("Go ahead and buy the car. Its gonna be a great car.");}
 		else
-			{consel.log ("Don't buys the car, its either old or had to many miles. Keep looking.");}
+			{console.log ("Don't buys the car, its either old or had to many miles. Keep looking.");}
