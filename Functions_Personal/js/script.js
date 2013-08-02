@@ -17,13 +17,15 @@ function convertMPGs(usergallons, usermiles){
 }
 
 function daytowork(workdistancemiles, workday){
-	workday = workdistancemiles * 2;
+	
+	return workday;
 }
 
-function daysleft(usermiles, currenttankmiles, workday, milesleftintank, additionalmiles){
+function daysleft(usermiles, currenttankmiles, workday, milesleftintank, additionalmiles, workdistancemiles){
+	workday = workdistancemiles * 2;
 	additionalmiles = prompt("Are you driving any extra miles in the next few days?");
-	milesleftintank = usermiles - currenttankmiles - additionalmiles;
-	dayslefttodrive = milesleftintank/workday;
+	milesleftintank = usermiles - currenttankmiles;
+	dayslefttodrive = milesleftintank / workday;
 	return dayslefttodrive;
 }
 
@@ -32,6 +34,5 @@ function resultsprint(dayslefttodrive, mpgs){
 }
 
 convertMPGs(usergallons, usermiles);
-daytowork(workdistancemiles, workday);
-daysleft(usermiles, currenttankmiles, workday, milesleftintank, additionalmiles);
+daysleft(usermiles, currenttankmiles, workday, milesleftintank, additionalmiles, workdistancemiles);
 resultsprint(dayslefttodrive, mpgs);
