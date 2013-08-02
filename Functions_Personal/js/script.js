@@ -29,4 +29,4 @@ function resultsprint(currenttankmiles, dayslefttodrive, mpgs){
 convertMPGs();
 daytowork();
 daysleft();
-
+resultsprint();
