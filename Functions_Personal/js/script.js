@@ -6,8 +6,8 @@ var usermiles = prompt("How many miles can you drive on a tank of gas?(an averag
 var workdistancemiles = prompt("How far is work from your house?");
 var additionalmiles = 0;
 var currenttankmiles = prompt("How many miles are on your current tank?(How far have you drivin?)");
-var mpgs
-var workday
+var mpgs = 0;
+var workday = 0;
 
 function convertMPGs(usergallons, usermiles){
 	var mpgs = usermiles / usergallons;
