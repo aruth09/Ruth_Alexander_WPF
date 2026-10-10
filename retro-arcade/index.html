@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Retro Arcade</title>
+    <meta name="description" content="Play retro games from your own ROM files, stored on your device.">
+    <meta name="theme-color" content="#14121f">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Arcade">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="top">
+        <h1>Retro Arcade</h1>
+        <label class="button primary" for="rom-input">+ Add games</label>
+        <input id="rom-input" type="file" multiple hidden>
+    </header>
+
+    <main>
+        <p id="install-hint" class="hint" hidden>
+            Tip: tap <strong>Share</strong> → <strong>Add to Home Screen</strong> to play full screen and keep your games
+            safe from Safari's storage cleanup.
+        </p>
+
+        <section id="empty" class="empty" hidden>
+            <h2>No games yet</h2>
+            <p>Tap <strong>+ Add games</strong> and pick ROM files from the Files app (iCloud Drive, On My iPhone, etc.).
+               They're copied into this site's storage on your phone — nothing is uploaded anywhere.</p>
+            <p class="small">Supported: NES, SNES, Game Boy / Color / Advance, N64, DS, Genesis, Master System, Game Gear,
+               PlayStation, PC Engine, Neo Geo Pocket, WonderSwan, Lynx, Atari 2600/7800, arcade and more.</p>
+        </section>
+
+        <ul id="library" class="library"></ul>
+
+        <p id="storage" class="small muted"></p>
+    </main>
+
+    <dialog id="system-dialog">
+        <form method="dialog">
+            <h2>Which system?</h2>
+            <p id="system-dialog-file" class="small muted"></p>
+            <select id="system-select"></select>
+            <div class="row">
+                <button value="skip" class="button">Skip</button>
+                <button value="ok" class="button primary">Add</button>
+            </div>
+        </form>
+    </dialog>
+
+    <p id="toast" class="toast" role="status" hidden></p>
+
+    <script src="js/systems.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/library.js"></script>
+</body>
+</html>
